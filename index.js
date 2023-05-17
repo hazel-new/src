@@ -6,7 +6,7 @@ import React from "react"
 // createRoot() 是React 18 引入的一个新的根 API； 它启用了新的并发渲染器，允许使用并发功能；
 // ES6 import方法{xx}
 import { createRoot } from "react-dom/client"
-import App from './01-base/04-component_style'
+import App from './01-base/05-事件绑定-1'
 
 
 
