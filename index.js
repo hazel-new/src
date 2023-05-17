@@ -6,7 +6,7 @@ import React from "react"
 // createRoot() 是React 18 引入的一个新的根 API； 它启用了新的并发渲染器，允许使用并发功能；
 // ES6 import方法{xx}
 import { createRoot } from "react-dom/client"
-import App from './01-base/01-class_component'
+import App from './01-base/04-component_style'
 
 
 
@@ -31,7 +31,7 @@ import App from './01-base/01-class_component'
 // react18写法
 const root = createRoot(document.getElementById("root"))
 
-// 组件类可以直接当标签用，单标签双标签都可以,必须大写开头
+// react里面组件类App可以直接当标签用，单标签双标签都可以,但必须大写开头
 // root.render(<div>react18</div>)
 // root.render(<App></App>) //双标签
 root.render(<App/>)  //单标签
