@@ -29,7 +29,7 @@
 import React from "react"
 
 
-// 创建了一个组件类App,类名自取，大写开头，但是后面的继承是必须的固定格式
+// 创建了一个组件类App,类名自取，必须大写开头，但是后面的继承是必须的固定格式
 // 固定函数render()渲染这个组件类，需要有一个返回值return
 class App extends React.Component{
     render(){

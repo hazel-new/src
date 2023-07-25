@@ -1,6 +1,6 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
-import App from './01-base/04-component_style'
+import App from './01-base/05-事件绑定-1'
 
 // react18写法
 const root = createRoot(document.getElementById("root"))
