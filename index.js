@@ -1,6 +1,6 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
-import App from './01-base/06-事件绑定-2'
+import App from './01-base/07-ref'
 // import App from './imooc-code/Welcome'
 
 // react18写法

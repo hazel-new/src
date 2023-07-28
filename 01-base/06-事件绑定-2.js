@@ -29,8 +29,8 @@ export default class App extends Component {
     console.log("click2",this.a)
   }
 
-  handleClick3 = ()=>{
-    console.log("click3",this.a)
+  handleClick3 = (evt)=>{
+    console.log("click3",this.a,evt)
   }
 
   handleClick4 (){
@@ -39,4 +39,4 @@ export default class App extends Component {
 }
 
 
-// react并不会真正的绑定事件到每一个具体的元素上，而是采用事件代理的模式。
+// react并不会真正的绑定事件到每一个具体的元素上，而是采用事件代理的模式。也不需要解绑。
