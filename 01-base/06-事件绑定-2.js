@@ -6,7 +6,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <input />
+        <input/>
         {/* 写法1：逻辑简单，推荐；如果处理逻辑过多，不推荐这种写法 */}
         <button onClick={ ()=>{
             console.log("click1",this.a)
@@ -15,12 +15,12 @@ export default class App extends Component {
         {/* 写法2/3： this后面方法没有小括号，要注意this指向 */}
         {/* 写法2：不推荐，onMouseOver */}
         {/* 写法3：推荐 */}
-        <button onClick={ this.handleClick2.bind(this) }>add2</button>    
-        <button onClick={ this.handleClick3 }>add3</button>  
+        <button onClick={ this.handleClick2.bind(this) }>add2-不推荐</button>    
+        <button onClick={ this.handleClick3 }>add3-推荐</button>  
           {/* 写法4：this后面方法有小括号，比较推荐,尤其传参情景 */}
         <button onClick={ ()=>{
             this.handleClick4()  
-        } }>Madd4</button>    
+        } }>Madd4-比较推荐-传参</button>    
       </div>
     )
   }
