@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
+// 把给定的数组渲染到页面中，数组变化页面自动跟着变
 export default class App extends Component {
+    
 
     state = {
         // list:["1111","2222","3333"]
@@ -22,6 +24,7 @@ export default class App extends Component {
 
   render() {
     
+    // 注意列表中必须要加key，因为虚拟dom概念 
     // 写法2：
     // var newlist = this.state.list.map(item=><li key={item}>{item}</li>)
     return (
@@ -32,7 +35,8 @@ export default class App extends Component {
                 this.state.list.map((item)=>
                     <li key={item.id}>{item.text}</li>)
 
-                // newlist  //写法2
+                //写法2
+                // newlist  
                 // // map函数的两个形参
                 // this.state.list.map((item,index)=>
                 // <li key={index}>{item.text}--{index}</li>)
@@ -43,7 +47,7 @@ export default class App extends Component {
   }
 }
 
-/* // 原生js的map方法
+/* // 方法2：原生js的map方法
 var list = ["aa","bb","cc"]
 
 // 注意`是左上角的，不是单引号
