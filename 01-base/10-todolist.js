@@ -37,7 +37,7 @@ export default class App extends Component {
                         {/* 正常默认显示 */}
                         {/* {item.mytext} */}
 
-                        {/* 富文本展示 */}
+                        {/* 富文本展示,输入框输入html片段，比如<b>dddd</b>显示粗体。一般用在信任后端的情况下使用。 */}
                         <span dangerouslySetInnerHTML={
                             {
                                 __html:item.mytext

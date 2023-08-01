@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-// react中尽量减少dom操作，因为react以及在做dom操作了
+// react中尽量减少dom操作，因为react已经在做dom操作了
 // 状态就是组件描述某种显示情况的数据，由组件自己设置和更改，也就是说由组件自己维护，使用状态的目的就是为了在不同的状态下使组件的显示不同(自己管理)
 // 比如“收藏”按钮，点之前跟点之后状态就不一样
 export default class App extends Component {

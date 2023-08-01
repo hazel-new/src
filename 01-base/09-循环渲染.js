@@ -13,7 +13,7 @@ export default class App extends Component {
             },
             {
                 id:2,
-                text:"2222"
+                text:"2222" 
             },
             {
                 id:3,

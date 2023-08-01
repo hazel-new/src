@@ -1,7 +1,12 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
-import App from './01-base/09-循环渲染'
+import App from './01-base/12-案例-卖座选项卡'
+
+
+// mooc课程
 // import App from './imooc-code/Welcome'
+import 'bootstrap/dist/css/bootstrap.min.css'
+// import App from "./imooc-code/App"
 
 // react18写法
 const root = createRoot(document.getElementById("root"))
