@@ -1,6 +1,14 @@
+/*
+ * @FilePath: index.js
+ * @Author: Hazel
+ * @Date: 2023-07-28 20:25:42
+ * @LastEditors: 
+ * @LastEditTime: 2023-08-03 20:56:57
+ * Copyright: 2023 xxxTech CO.,LTD. All Rights Reserved.
+ */
 import React from "react"
 import { createRoot } from "react-dom/client"
-import App from './01-base/12-案例-卖座选项卡'
+import App from './01-base/08-state状态'
 
 
 // mooc课程

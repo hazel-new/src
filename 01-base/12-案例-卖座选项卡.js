@@ -3,15 +3,15 @@
  * @Author: Hazel
  * @Date: 2023-07-31 22:00:48
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-08-01 22:42:18
+ * @LastEditTime: 2023-08-03 20:43:19
  * Copyright: 2023 xxxTech CO.,LTD. All Rights Reserved.
  */
 
 import React, { Component } from 'react'
 import './css/02-maizuo.css'
-// import Film from './maizuocomponent/Film.js' // .js可以省略
-// import Cinema from './maizuocomponent/Cinema'
-// import Center from './maizuocomponent/Center'
+import Film from './maizuocomponent/Film.js' // .js可以省略
+import Cinema from './maizuocomponent/Cinema'
+import Center from './maizuocomponent/Center' 
 
 
 export default class App extends Component {
@@ -35,9 +35,15 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {/* <Film></Film>
-        <Cinema></Cinema>
-        <Center></Center> */}
+        {
+          this.state.current ===0 && <Film></Film>
+        }
+        {
+          this.state.current ===1 && <Cinema></Cinema>
+        }
+        {
+          this.state.current ===2 && <Center></Center>
+        }
         <ul>
           {
             this.state.list.map((item,index) =>

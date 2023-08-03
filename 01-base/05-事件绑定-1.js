@@ -1,3 +1,11 @@
+/*
+ * @FilePath: 05-事件绑定-1.js
+ * @Author: Hazel
+ * @Date: 2023-05-16 10:30:25
+ * @LastEditors: 
+ * @LastEditTime: 2023-08-03 21:03:21
+ * Copyright: 2023 xxxTech CO.,LTD. All Rights Reserved.
+ */
 import React, { Component } from 'react'
 
 export default class App extends Component {
@@ -6,7 +14,7 @@ export default class App extends Component {
       <div>
         <input />
         {/* 写法1：如果处理逻辑过多，不推荐这种写法 */}
-        <button onClick={ ()=>{
+        <button onClick={()=>{
             console.log("click1")
         }}>add1</button>
 
