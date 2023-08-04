@@ -8,7 +8,7 @@
  */
 import React from "react"
 import { createRoot } from "react-dom/client"
-import App from './01-base/08-state状态'
+import App from './01-base/13-案例-影院查询'
 
 
 // mooc课程
