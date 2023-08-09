@@ -3,7 +3,7 @@
  * @Author: Hazel
  * @Date: 2023-08-09 20:37:55
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-08-09 20:55:56
+ * @LastEditTime: 2023-08-09 21:24:46
  * Copyright: 2023 xxxTech CO.,LTD. All Rights Reserved.
  */
 import React, { Component } from 'react'
@@ -36,7 +36,6 @@ export default class Navbar extends Component {
     let { title,leftshow } = this.props
     // console.log(leftshow)
 
-    // 如何在接受属性的时候做验证？看最后
     return (
       <div>
         {leftshow && <button>返回</button>}

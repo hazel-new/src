@@ -2,13 +2,13 @@
  * @FilePath: index.js
  * @Author: Hazel
  * @Date: 2023-07-28 20:25:42
- * @LastEditors: 
- * @LastEditTime: 2023-08-03 20:56:57
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2023-08-09 21:52:14
  * Copyright: 2023 xxxTech CO.,LTD. All Rights Reserved.
  */
 import React from "react"
 import { createRoot } from "react-dom/client"
-import App from './01-base/16-props'
+import App from './01-base/18-状态vs属性'
 // import App from './03-hooks/01-useState'
 
 
