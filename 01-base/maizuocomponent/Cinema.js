@@ -49,7 +49,6 @@ export default class Cinema extends Component {
         cinemaList:res.data.data.cinemas,
         bakcinemaList:res.data.data.cinemas
       })
-
     })
     .catch(err=>{
       console.log(err)

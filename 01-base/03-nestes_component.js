@@ -32,11 +32,12 @@ function Swiper(){
     )
 }
 
-// 箭头函数写法
+// 箭头函数写法，更推荐这种写法
 const Tabbar = ()=><div>this is Tabbar</div>
 
 // 嵌套组件：App是根组件，Navbar/Swiper/Tabbar是子组件。子组件可以是类组件，也可以是函数组件，但一般推荐统一类型,记得组件都要首字母大写。
 // 再往下嵌套，比如Child组件，要写在对应的父组件里面，不能直接写在App里面
+// 一个项目里组件最好统一，都是类组件或者都是函数组件，目前我自己项目里是函数组件
 export default class App extends Component {
   render() {
     return (
