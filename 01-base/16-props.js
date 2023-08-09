@@ -5,6 +5,12 @@ import Navbar from './Navbar/index' // 导入自定义组件，文件夹里只�
 export default class App extends Component {
 
   render() {
+    //可能是上面父组件传来的一个对象
+    var obj = {
+        title : "测试",
+        leftshow:false
+    }
+
     return (
       <div>
         <div>
@@ -14,13 +20,18 @@ export default class App extends Component {
 
         <div>
           <h2>列表</h2>
-          <Navbar title="列表" leftshow={true}/>
+          <Navbar title="列表" />
         </div>
 
         <div>
           <h2>购物车</h2>
-          <Navbar title="购物车" leftshow={false}/>
+          <Navbar title="购物车"/>
         </div>
+
+        {/* <Navbar title={obj.title} leftshow={obj.leftshow}/> */}
+        {/* 下面是上面这句的简写方式，父组件和孩子组件的属性正好一样的话，可以用...展开，是es6写法 */}
+        <Navbar {...obj}/> 
+
       </div>
 
 
