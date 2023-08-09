@@ -8,8 +8,8 @@
  */
 import React from "react"
 import { createRoot } from "react-dom/client"
-// import App from './01-base/13-案例-影院查询'
-import App from './03-hooks/01-useState'
+import App from './01-base/16-props'
+// import App from './03-hooks/01-useState'
 
 
 

@@ -49,6 +49,9 @@ export default class Cinema extends Component {
         cinemaList:res.data.data.cinemas,
         bakcinemaList:res.data.data.cinemas
       })
+
+      //打印log
+      console.log(this.state.cinemaList)
     })
     .catch(err=>{
       console.log(err)
@@ -91,6 +94,10 @@ export default class Cinema extends Component {
     this.setState({
       cinemaList:newlist // cinemaList每次都会被重新覆盖，方法1是用备份数组bakcinemaList来避免，废内存。方法2把输入框value值跟react当前组件绑在一起，value值和组件状态一起改变，后面受控组件讲完再优化。
     })
+
+    
+      //打印log,这里打印的不是最新状态
+      console.log(this.state.cinemaList)
   }
 }
 
