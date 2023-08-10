@@ -8,7 +8,7 @@
  */
 import React from "react"
 import { createRoot } from "react-dom/client"
-import App from './01-base/20-受控'
+import App from './01-base/21-受控cinema'
 // import App from './03-hooks/01-useState'
 
 
