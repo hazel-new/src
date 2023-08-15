@@ -8,7 +8,8 @@
  */
 import React from "react"
 import { createRoot } from "react-dom/client"
-import App from './01-base/09-循环渲染'
+// import App from './01-base/09-循环渲染'
+import App from './02-advanced/01-子传父'
 // import App from './03-hooks/01-useState'
 // import App from './my_demo/mytable2'
 
