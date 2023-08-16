@@ -8,7 +8,9 @@ import React, { Component } from 'react'
 
 class Navbar extends Component{
     render(){
-        return <div style={{background:"red"}}>
+        return(
+            <React.Fragment>
+            <div style={{background:"red",height:'500px'}}>
             <button onClick={()=>{
                 console.log("子通知父,让父的isShow取反。就是子传父。",this.props.event) // event就是属性名，可以改
 
@@ -17,6 +19,11 @@ class Navbar extends Component{
             }}>click</button>
             <span>navbar</span>
         </div>
+        <div style = {{height:'300px'}}>
+            另一个片段
+        </div>
+        </React.Fragment>
+        )
     }
 }
 
