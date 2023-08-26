@@ -1,3 +1,11 @@
+/*
+ * @FilePath: 01-子传父.js
+ * @Author: Hazel
+ * @Date: 2023-08-16 20:17:53
+ * @LastEditors: 
+ * @LastEditTime: 2023-08-16 20:32:40
+ * Copyright: 2023 xxxTech CO.,LTD. All Rights Reserved.
+ */
 // 显示导航栏和侧边栏，点击导航栏上按钮，控制侧边栏出现和消失
 // {条件this.state.isShow && <Sidebar/>}
 
@@ -10,7 +18,7 @@ class Navbar extends Component{
     render(){
         return(
             <React.Fragment>
-            <div style={{background:"red",height:'500px'}}>
+            <div style={{background:"red",height:'50px'}}>
             <button onClick={()=>{
                 console.log("子通知父,让父的isShow取反。就是子传父。",this.props.event) // event就是属性名，可以改
 
@@ -19,7 +27,7 @@ class Navbar extends Component{
             }}>click</button>
             <span>navbar</span>
         </div>
-        <div style = {{height:'300px'}}>
+        <div style = {{height:'30px'}}>
             另一个片段
         </div>
         </React.Fragment>
