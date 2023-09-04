@@ -8,21 +8,21 @@ export default class App extends Component {
     
 
     state = {
-        // list:["1111","2222","3333"]
-        list:[
-            {
-                id:1,
-                text:"1111"
-            },
-            {
-                id:2,
-                text:"2222" 
-            },
-            {
-                id:3,
-                text:"3333"
-            }
-        ]
+        list:["1111","2222","3333"]
+        // list:[
+        //     {
+        //         id:1,
+        //         text:"1111"
+        //     },
+        //     {
+        //         id:2,
+        //         text:"2222" 
+        //     },
+        //     {
+        //         id:3,
+        //         text:"3333"
+        //     }
+        // ]
     }
 
   render() {
@@ -30,6 +30,7 @@ export default class App extends Component {
     // 注意列表中必须要加key，因为虚拟dom概念 
     // 写法2：
     // var newlist = this.state.list.map(item=><li key={item}>{item}</li>)
+
     return (
       <div>
         <ul>
@@ -42,9 +43,10 @@ export default class App extends Component {
                 // newlist  
 
 
-                // map函数的两个形参,不涉及到列表的增加，删除，重排，可以设置成索引index
-                this.state.list.map((item,index)=>
-                <li key={index}>{item.text}--{index}</li>)
+                // // map函数的两个形参,不涉及到列表的增加，删除，重排，可以设置成索引index
+                // this.state.list.map((item,index)=>
+                // <li key={index}>{item.text}--{index}</li>)
+
             }
         </ul>
       </div>
@@ -57,6 +59,7 @@ export default class App extends Component {
 
 // // 注意`是左上角的，不是单引号
 // var newlist = list.map(item=>`<li>${item}</li>`)
+// console.log(newlist)
 
-// console.log(newlist.join("")) 
+// // console.log(newlist.join("")) 
 
