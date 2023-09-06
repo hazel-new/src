@@ -100,33 +100,45 @@ export default function test() {
         ]
       }
 
-    console.log(BulletValue.tenant)
+    // console.log(BulletValue.tenant)              
 
-    const value = (b) => {
-        return BulletValue[b]
-    }
+    // const value = (b) => {
+    //     return BulletValue[b]
+    // }
 
-var d=value('tenant')
-console.log(d)
+    // var d=value('tenant')
+    console.log(BulletValue['tenant'])
 
-// var obj = {
-//     name:"kerwin",
-//     age:100,
-//     location:'dalian'
-// }
 
-// for (var i in obj){
-//     // 获取key
-//     // console.log(i)
-//     // 获取value
-//     console.log(obj[i])
-//     document.write(i+":"+obj[i])
-//     document.write("<br>")
-// }
+    const f = (value) => {
+     const d = BulletValue[value]
+     console.log("bullet_value:", d)
+      var op = []
+      for(var i=0;i<d.length;i++) {
+        var obj = {}
+        obj["label"]= d[i]
+        obj["value"]= d[i] 
+        op[i] = obj     
+      }
+
+      return op
+    }   
+    
+    const ccc = f('type')
+
+    const opp = [{
+      'l':'dddd',
+      'v':  ccc
+    }]  
+    
+  
+    console.log("调用获得的值",opp)
+
+
 
   return (
     <div>
-      
+
     </div>
   )
 }
